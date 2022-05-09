@@ -1,10 +1,7 @@
 public class MeuPrimeiroPrograma {
 
     public static void main(String[] args) {
-        minhaInstrucaoDeImprimir();
-    }
-
-    static void minhaInstrucaoDeImprimir() {
-        System.out.println("Olá mundo, eu sou o primeiro programa do Tiago");
+        // A seguinte linha é para imprimir um calculo de 2+2
+        System.out.println(2+2);
     }
 }
