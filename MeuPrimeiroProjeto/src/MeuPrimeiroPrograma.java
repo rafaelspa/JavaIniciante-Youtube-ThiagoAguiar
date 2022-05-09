@@ -1,17 +1,29 @@
 public class MeuPrimeiroPrograma {
 
     public static void main(String[] args) {
-        System.out.println(2+2);
-        System.out.println(2+6);
-        System.out.println("ola texto");
-        System.out.println(10/3);
+        // variaveis -> tipo: Textos (Strings)
+        // variaveis -> tipo: Numeros (Int)
+        // variaveis -> tipo: Numeros fracionados (Double)
+        // variaveis -> tipo: booleanas (verdadeiro | falso)
 
-        // comentarios // -> sao uteis para indicar comentarios/notas nos projetos
-        // ponto de entrada - entry-point -> é o ponto onde todos os sistemas procuram no seu projeto para
-        // começar a iniciar o projeto
-        // metodos: sao instrucoes que define para o programa executar . Exemplo:
-        // instrucao chamada System.out.println("")
-        // propriedades/variaveis -> será onde iremos armazenar dados para manipula-los no futuro
+        // TIPOS DE DADOS
+        String login = "Olá"; // Representacao de Texto (ASCII)
+        int number1 = 10; // Representacao de numeros inteiros
+        double percent = 24.30; // Representacao de numeros fracionados
+        boolean isDriver = true; // Representacao booleana (estado verdadeiro, falso)
 
+
+
+        System.out.println(login);
+        System.out.println(number1);
+        System.out.println(percent);
+        System.out.println(isDriver);
+
+        // variaveis
+        // SAO ESPACOS DE MEMORIA ALOCADO (REPRESENTADO POR TIPOS)
+
+        int number; //DECLARANDO VARIAVEL
+        number = 55;
+        System.out.println(number);
     }
 }
