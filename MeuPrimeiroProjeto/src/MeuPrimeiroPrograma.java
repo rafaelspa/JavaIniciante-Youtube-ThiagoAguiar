@@ -1,14 +1,20 @@
 public class MeuPrimeiroPrograma {
 
     public static void main(String[] args) {
-        // 2 TIPOS DE ERROS
-        // ERRO DE COMPILAÇÃO
-        String text = "Olá mundo";
-        System.out.println(text);
+        calc(10, 5); // argumentos
+    }
 
-        // ERRO DE EXECUÇÃO (Exception)
-        int x = 10;
-        int y = 0;
-        System.out.println(x/y);
+    static void calc(int x, int y) {
+        // static void > declaracao padrao (falaremos depois sobre isso, mas precisa!)
+        // sum > NOME DA FUNCAO, GERALMENTE USAMOS VERBOS PARA DEFINIR O QUE A FUNÇÃO FAZ
+        // () > PARENTESES USAMOS PARA DEFINIR O QUE CHEGARÁ NAQUELA FUNÇÃO (parametros)
+        // (tipo nomeDaVariavel)
+        // {} > bloco de código que será executado
+
+
+        System.out.println(x + y);
+        System.out.println(x - y);
+        System.out.println(x / y);
+        System.out.println(x * y);
     }
 }
