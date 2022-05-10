@@ -1,24 +1,17 @@
+import co.tiagoaguiar.megasena.User;
+
 import java.util.Random;
 
 public class MegaSena {
 
     public static void main(String[] args) {
-        Random generate = new Random();
+        java.util.Random generate = new java.util.Random();
 
-        // while (true) -> looping infinito
+        // tipo variavel = new tipo();
+        User user = new User();
 
-        // while (i < 10) -> looping com saída
+        User user1 = new User();
 
-/*        int i = 0;
-        while(i < 6) {
-            int number = generate.nextInt(60);
-            System.out.println(number);
-            i++;
-        }*/
-
-        for(int i = 0; i < 6; i++) {
-            int number = generate.nextInt(60);
-            System.out.println(number);
-        }
+        co.tiagoaguiar.megasena.User user2 = new co.tiagoaguiar.megasena.User();
     }
 }
