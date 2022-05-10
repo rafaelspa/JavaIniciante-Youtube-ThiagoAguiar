@@ -1,23 +1,19 @@
 package co.tiagoaguiar;
 
+import java.util.Scanner;
+
 public class App {
 
     public static void main(String[] args) {
-        // tipos primitivos
+        // converter tipos primitivos
+        // (casting)
 
-        boolean isLogged = true;
-        byte b = 'a';
-        char c = 'c';
-        String character = "c";
-        short c = -129; // = int (só com menos espaços)
-        int i = 12341243; // grande
-        long l = 13412351958L; // = int (só com mais espaços)
-        float f = 19.19f; // 32bit (menor do que double)
-        double d = 19.19; // 64bit
+        double dd = 10.10;
+        short ss = 32;
 
-        // nao primitivo
+        Scanner scanner = new Scanner(System.in);
+        int z = (int) scanner.nextDouble();
 
-        String character = "c";
-        String character2 = new String("str");
+        System.out.println(z);
     }
 }
