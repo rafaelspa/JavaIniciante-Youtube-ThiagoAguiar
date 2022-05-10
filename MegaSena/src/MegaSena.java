@@ -3,9 +3,13 @@ import java.util.Scanner;
 public class MegaSena {
 
     public static void main(String[] args) {
-        int x = 2;
-        Integer y = 4;
+        // ESCOPO DE VARIÁVEIS
+        int x;
+        if (true) {
+            x = 10; // variavel local
+        } else {
+            x = 2;
+        }
         System.out.println(x);
-        System.out.println(y);
     }
 }
