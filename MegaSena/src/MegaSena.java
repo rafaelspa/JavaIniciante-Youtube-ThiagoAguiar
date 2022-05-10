@@ -1,17 +1,14 @@
-import co.tiagoaguiar.megasena.User;
-
-import java.util.Random;
+import java.util.Scanner;
 
 public class MegaSena {
 
     public static void main(String[] args) {
-        java.util.Random generate = new java.util.Random();
+        Scanner scanner = new Scanner(System.in);
 
-        // tipo variavel = new tipo();
-        User user = new User();
+        System.out.println("Digite o seu nome:");
 
-        User user1 = new User();
+        String name = scanner.nextLine();
 
-        co.tiagoaguiar.megasena.User user2 = new co.tiagoaguiar.megasena.User();
+        System.out.println("Olá, " + name);
     }
 }
