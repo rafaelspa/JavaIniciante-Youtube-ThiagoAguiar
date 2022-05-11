@@ -5,12 +5,13 @@ import java.util.Scanner;
 public class App {
 
     public static void main(String[] args) {
-        Guitar fender = new Guitar();
-        fender.chords = 6;
-        fender.name = "fender";
+        User userA = new User();
+        userA.firstName = "Tiago";
+        userA.lastName = "Aguiar";
+        String fullName = userA.getFullName();
 
-        Guitar ibanez = new Guitar();
-        ibanez.chords = 6;
-        ibanez.name = "Ibanez";
+
+        System.out.println(fullName);
+
     }
 }

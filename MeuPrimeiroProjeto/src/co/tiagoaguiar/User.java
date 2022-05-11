@@ -2,10 +2,12 @@ package co.tiagoaguiar;
 
 public class User {
 
-    private int followers;
-    private int following;
+    public String firstName;
+    public String lastName;
+    public String fullName;
+    public Address address;
 
-    public void follower() {
-        
+    public String getFullName() {
+        return firstName + " " + lastName;
     }
 }
