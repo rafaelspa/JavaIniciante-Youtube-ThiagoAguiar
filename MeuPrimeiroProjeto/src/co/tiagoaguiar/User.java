@@ -2,11 +2,20 @@ package co.tiagoaguiar;
 
 public class User {
 
-    // PROPRIEDADES (PRIVATE)
+    // propriesdades campo (objeto)
     private String firstName;
     private String lastName;
 
-    // SETTER
+    // contrutor
+    public User() {
+    }
+
+    public User(String firstName, String lastName) {
+        this.firstName = firstName.toUpperCase();
+        this.lastName = lastName;
+    }
+
+    // setters
     public void setFirstName(String firstName) {
         this.firstName = firstName.toUpperCase();
     }
@@ -15,7 +24,7 @@ public class User {
         this.lastName = lastName;
     }
 
-    // GETTER
+    // getters
     public String getFirstName() {
         return firstName;
     }
