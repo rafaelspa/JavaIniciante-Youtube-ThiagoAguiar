@@ -8,9 +8,20 @@ public class User {
     private String firstName;
     private String lastName;
 
+    private static int count = 0;
+
     public User(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
+        count = count + 1;
+    }
+
+    public static void setCount(int c) {
+        count = count + c;
+    }
+
+    public int getCount() {
+        return count;
     }
 
     public void setFirstName(String firstName) {
