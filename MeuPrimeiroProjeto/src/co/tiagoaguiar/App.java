@@ -6,12 +6,11 @@ public class App {
 
     public static void main(String[] args) {
         User userA = new User();
-        userA.firstName = "Tiago";
-        userA.lastName = "Aguiar";
-        String fullName = userA.getFullName();
+        userA.setFirstName("Tiago");
 
 
-        System.out.println(fullName);
-
+        User userB = new User();
+        userB.setFirstName("Apple Incorporation");
+        System.out.println(userB.getFirstName());
     }
 }

@@ -2,12 +2,25 @@ package co.tiagoaguiar;
 
 public class User {
 
-    public String firstName;
-    public String lastName;
-    public String fullName;
-    public Address address;
+    // PROPRIEDADES (PRIVATE)
+    private String firstName;
+    private String lastName;
 
-    public String getFullName() {
-        return firstName + " " + lastName;
+    // SETTER
+    public void setFirstName(String firstName) {
+        this.firstName = firstName.toUpperCase();
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    // GETTER
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
     }
 }
