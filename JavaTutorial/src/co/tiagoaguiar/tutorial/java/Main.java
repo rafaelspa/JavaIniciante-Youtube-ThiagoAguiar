@@ -6,10 +6,20 @@ import java.util.Arrays;
 public class Main {
 
     public static void main(String[] args) {
-        int[] numbers = new int[]{10, 30, 3, 2, 1, 5, 2, 3, 10};
-        Arrays.sort(numbers);
-        System.out.println(numbers); // <-- hashcode int[] (Identificador)
+        // 3. comparando arrays
+        int[] numbersA = new int[]{1, 2, 3};
+        int[] numbersB = new int[]{1, 2, 3};
+        int[] numbersC = numbersA;
 
-        System.out.println(Arrays.toString(numbers));
+        System.out.println(numbersA == numbersB);
+        System.out.println(numbersA.equals(numbersB));
+        System.out.println(Arrays.equals(numbersA, numbersB));
+        System.out.println(numbersA + " " + numbersB);
+
+        System.out.println(numbersA == numbersC);
+        System.out.println(numbersA.equals(numbersC));
+        System.out.println(Arrays.equals(numbersA, numbersC));
+        System.out.println(numbersA + " " + numbersC);
+
     }
 }
